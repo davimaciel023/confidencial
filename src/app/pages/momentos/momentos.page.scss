@@ -1,0 +1,107 @@
+ion-toolbar {
+  --background: linear-gradient(180deg, #FF69B4, #C084FC);
+}
+
+.img {
+  display: flex;
+
+
+  img{
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+
+ion-content {
+  --background: linear-gradient(145deg, #fcd1ee, #e7adc2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.page-header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+
+  img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #d63384;
+  }
+}
+
+.moments-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.moment-card {
+  width: 90%;
+  max-width: 380px;
+  background: linear-gradient(145deg, #f8a3dc, #f06595);
+  color: white;
+  border-radius: 15px;
+  position: relative;
+  padding: 70px 5px 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.moment-card-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  border: 4px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+ion-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+ion-card-content {
+  p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+  .moment-date {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+}
+
+
+
+

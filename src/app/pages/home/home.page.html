@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="img">
+      <img src="../../../assets/imgs/Barbie-Logo-1975-1991.png" alt="Logo barbie">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h1>Bem-vinda ao mundo da Nágilla!</h1>
+    <div class="infos">
+      <img src="assets/imgs/Confidencial/imgSemFundo.png" alt="Foto da minha amada">
+      <p>Hoje é o seu dia, e cada clique aqui é um pedacinho do meu amor por você. Preparada?</p>
+    </div>
+    <div class="button">
+      <ion-button (click)="setOpen(true)">Quero ver os parabéns!</ion-button>
+      <ion-alert
+      [isOpen]="isAlertOpen"
+      subHeader="MENSAGEM IMPORTANTE"
+      message="Infelizmente o incopetente do seu namorado esqueceu de configurar esse butão"
+      [buttons]="alertButtons"
+      (didDismiss)="setOpen(false)"></ion-alert>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="img">
+      <img src="../../../assets/imgs/Barbie-Logo-1975-1991.png" alt="Logo barbie">
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="page-header">
+    <h2>Momentos</h2>
+  </div>
+
+  <div class="moments-list">
+    <ion-card *ngFor="let momento of momentos; let i = index" class="moment-card">
+
+      <div class="moment-card-header">
+        <img [src]="momento.img" alt="{{momento.title}}">
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>{{ momento.title }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>{{ momento.description }}</p>
+        <p class="moment-date">📅 <strong>{{ momento.date }}</strong></p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
